@@ -9,11 +9,11 @@
 </head>
 
 <body>
-
+  <!-- CABEÇALHO -->
   <header class="header-bg">
     <div class="header">
       <a href="./">
-        <img src="./img/bikcraft.png" alt="Bikcraft">
+        <img src="./img/bikcraft.png" alt="Bikcraft" width="136px" height="32px">
       </a>
 
       <nav aria-label="primaria">
@@ -26,6 +26,50 @@
     </div>
   </header>
 
-</body>
-</html>
+  <main class="introducao-bg">
+    <div class="introducao-container">
+      <div class="introducao-conteudo">
+        <h1>Bicicletas feitas sob medida<span class="yellow-point">.</span></h1>
+        <p>Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
+        <a href="./" class="botao">Escolha a Sua</a>
+      </div>
+      <picture>
+        <source media="(max-width: 800px)" srcset="./img/bicicletas/nimbus1.png">
+        <img src="./img/fotos/introducao.png" alt="Bicicleta Elétrica Preta" width="1280" height="1600">
+      </picture>
+    </div>
+  </main>
 
+  <article class="bicicletas-lista" id="bicicletas-lista">
+    <h2>escolha a sua<span class="yellow-point">.</span></h2>
+
+    <ul>
+      <li>
+        <a href="./">
+          <img src="./img/bicicleta/magic-home.png" alt="Bicicleta Preta" width="920" height="1040">
+          <h3>Magic Might</h3>
+          <span class="valor">R$ 2499</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="./">
+          <img src="./img/bicicleta/nimbus-home.png" alt="Bicicleta Preta" width="920" height="1040">
+          <h3>Nimbus Stark</h3>
+          <span class="valor">R$ 4999</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="./">
+          <img src="./img/bicicleta/nebula-home.png" alt="Bicicleta Branca" width="920" height="1040">
+          <h3>Nebula Cosmic</h3>
+          <span class="valor">R$ 3999</span>
+        </a>
+      </li>
+    </ul>
+  </article>
+
+</body>
+
+</html>

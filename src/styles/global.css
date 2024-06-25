@@ -26,12 +26,13 @@
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-  font-family: 'Poppins', sans-serif;
+  font-family: sans-serif;
 }
 
 p {
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
+  color: var(--cor-5);
 }
 
 ul {
@@ -40,4 +41,26 @@ ul {
 
 a {
   text-decoration: none;
+  font-family: "Poppins" ,sans-serif;
+}
+
+.botao {
+  text-transform: uppercase;
+  color: var(--cor-10);
+  padding: 16px 32px;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  border-radius: 4px;
+  font: bold 1.125rem / 1.35 "Poppins", sans-serif;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  max-width: max-content;
+  border: none;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: linear-gradient(#e0aa07, #d6930e);
+}
+
+.yellow-point {
+  color: var(--cor-p1);
 }

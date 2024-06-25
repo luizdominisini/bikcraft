@@ -64,11 +64,13 @@
 }
 
 @media (max-width: 600px) {
+
   .header-menu {
     gap: 12px;
   }
 
   .header-menu a {
     padding: 8px 12px;
+    font-size: 14px;
   }
 }
