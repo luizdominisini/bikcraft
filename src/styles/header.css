@@ -1,37 +1,74 @@
-.header-container {
+.header-bg {
+  background-color: #000000;
+}
+
+.header {
   max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
-  padding: 40px 20px 40px 20px;
+  gap: 20px;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
   margin: 0 auto;
 }
 
-.lista-menu {
+.header-menu {
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 40px;
 }
 
-.lista-item a {
-  text-decoration: none;
-  color: #fff;
+.header-menu a {
+  color: #ffffff;
+  display: inline-block;
+  padding: 16px 0px;
+  font-size: 1.125rem;
   position: relative;
 }
 
-.lista-item a::after {
+.header-menu a::after {
   content: "";
   display: block;
+  background-color: #ffffff;
   width: 0px;
   height: 2px;
-  position: absolute;
-  background: white;
   margin-top: 4px;
-  transition: 0.3s;
   position: absolute;
+  transition: .3s;
 }
 
-.lista-item a:hover {
-  
+.header-menu a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .header-menu {
+    gap: 20px;
+  }
+
+  .header-menu a {
+    background-color: #111111;
+    padding: 12px 16px;
+    border-radius: 4px;
+    transition: .3s;
+  }
+
+  .header-menu a:hover {
+    background: #2e2e2e;
+  }
+
+  .header-menu a::after {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-menu {
+    gap: 12px;
+  }
+
+  .header-menu a {
+    padding: 8px 12px;
+  }
 }
