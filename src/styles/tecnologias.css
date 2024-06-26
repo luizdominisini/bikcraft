@@ -1,0 +1,134 @@
+.tecnologia-bg {
+  background: var(--cor-11);
+  box-shadow: inset 0px -80px #ffffff, inset 0px 80px #ffffff
+}
+
+.tecnologia-container {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.tecnologia-conteudo {
+  padding: 160px 0px;
+}
+
+.tecnologia-conteudo .tecnologia-span {
+  font-size: 1.5em;
+  color: var(--cor-6);
+}
+
+.tecnologia-conteudo h2 {
+  font-size: 4em;
+  color: #ffffff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.tecnologia-conteudo .tecnologia-texto {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.tecnologia-conteudo p {
+  color: var(--cor-5);
+}
+
+.tecnologia-conteudo a {  
+  font-size: 1.5em;
+  color: var(--cor-p1);
+  display: inline-block;
+  margin-bottom: 80px;
+  position: relative;
+  transition: color .2s;
+}
+
+.tecnologia-conteudo a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: currentColor;
+}
+
+.tecnologia-conteudo a:hover {
+  color: var(--cor-1);
+}
+
+.tecnologia-vantagens {
+  display: flex;
+  gap: 40px;
+}
+
+.vantagens-item h3 {
+  color: var(--cor-1);
+  font-weight: 500;
+  margin: 8px 0px;
+}
+
+.vantagens-item p{
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.tecnologia-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+  border-radius: 4px;
+}
+
+@media (max-width: 1200px) {
+  .tecnologia-conteudo .tecnologia-span {
+    font-size: 1.2em;
+  }
+
+  .tecnologia-conteudo h2 {
+    font-size: 3em;
+  }
+
+  .tecnologia-conteudo .tecnologia-texto {
+    font-size: 1.175em;
+  }
+}
+
+@media (max-width: 800px) {
+  .tecnologia-bg {
+    box-shadow: none;
+  }
+
+  .tecnologia-imagem img {
+    display: none;
+  }
+
+  .tecnologia-conteudo h2 {
+    font-size: 2em;
+    margin: 1.5rem 0px;
+  }
+
+  .tecnologia-conteudo a {
+    margin-bottom: 60px;
+  }
+
+  .tecnologia-container {
+    grid-template-columns: 1fr;
+  }
+
+  .tecnologia-conteudo {
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tecnologia-vantagens {
+    flex-direction: column;
+  }
+}
