@@ -1,6 +1,8 @@
-@import url(./global.css);
-@import url(./header.css);
-@import url(./main.css);
-@import url(./bicicletas-lista.css);
-@import url(./tecnologias.css);
-@import url(./parceiros.css)
+@import url(./global/global.css);
+@import url(./global/header.css);
+@import url(./home/main.css);
+@import url(./home/bicicletas-lista.css);
+@import url(./home/tecnologias.css);
+@import url(./home/parceiros.css);
+@import url(./home/depoimento.css);
+@import url(./home/seguros.css)

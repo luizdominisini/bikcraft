@@ -57,6 +57,10 @@
 }
 
 @media (max-width: 800px) {
+  .parceiros-bg {
+    padding: 60px 0px;
+  }
+
   .parceiros-bg h2 {
     font-size: 2em;
   }

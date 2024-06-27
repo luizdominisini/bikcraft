@@ -104,6 +104,10 @@
     box-shadow: none;
   }
 
+  .tecnologia-conteudo {
+    padding: 60px 0px;
+  }
+
   .tecnologia-imagem img {
     display: none;
   }
