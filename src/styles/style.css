@@ -6,4 +6,7 @@
 @import url(./home/parceiros.css);
 @import url(./home/depoimento.css);
 @import url(./home/seguros.css);
-@import url(./global/footer.css)
+@import url(./global/footer.css);
+@import url(./bicicletas/bicicletas.css);
+@import url(./seguros/seguro.css);
+@import url(./seguros/perguntas.css);
