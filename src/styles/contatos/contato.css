@@ -1,0 +1,156 @@
+#contato-body {
+  background: linear-gradient(var(--cor-11) 600px, var(--cor-1) 0px);
+}
+
+.nav-titulo {
+  font-weight: 600;
+}
+
+.contato-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contato-dados {
+  background: var(--cor-12) url(/src/img/dec/bottom-left.png) no-repeat bottom
+    10px left 10px;
+  color: #ffffff;
+  padding: 60px;
+  border-radius: 4px 0 0 4px;
+}
+
+.contato-dados h3 {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+.contato-endereco {
+  margin-bottom: 32px;
+  padding-left: 28px;
+  background: url(/src/img/icones/local.png) no-repeat;
+}
+
+.contato-dados ul li,
+.contato-dados ul li a {
+  margin-bottom: 8px;
+  color: var(--cor-4);
+  font-weight: 400;
+  font-size: 1em;
+  font-style: normal;
+}
+
+.contato-meios {
+  margin-bottom: 32px;
+  background: url(/src/img/icones/email.png) no-repeat;
+}
+
+.contato-meios ul li:nth-child(-n + 2) {
+  padding-left: 28px;
+}
+
+.contato-meios li:last-child {
+  margin-top: 32px;
+  margin-bottom: 60px;
+}
+
+.contato-meios #tel {
+  background: url(/src/img/icones/telefone.png) no-repeat 0px 2px;
+  padding-left: 28px;
+}
+
+.contato-redes {
+  margin-bottom: 32px;
+  padding-left: 28px;
+}
+
+.lista-redes {
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.contato-form {
+  padding: 60px;
+  border-radius: 0 4px 4px 0;
+  background-color: var(--cor-0);
+}
+
+.contato-dados,
+.contato-form {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form div label {
+  display: block;
+  font-weight: 400;
+  font-size: 1em;
+  margin-bottom: 4px;
+}
+
+.form div input,
+.form textarea {
+  padding: 12px;
+  background: var(--cor-1);
+  border: 1px solid var(--cor-2);
+  border-radius: 4px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.form div:nth-child(n + 3) {
+  grid-column: span 2;
+}
+
+@media (max-width: 800px) {
+  .contato-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  #contato-body {
+    background: linear-gradient(var(--cor-11) 900px, var(--cor-1) 0px);
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .form div:nth-child(2) {
+    grid-column: span 2;
+  }
+
+  .contato-form {
+    padding: 20px;
+    border-radius: 0 0 4px 4px;
+  }
+
+  .contato-dados {
+    background: var(--cor-12);
+    padding: 20px;
+    border-radius: 4px 4px 0 0;
+  }
+
+  .contato-redes {
+    margin-bottom: 0px;
+    padding-left: 24px;
+  }
+
+  .contato-meios li:last-child {
+    margin-bottom: 20px;
+  }
+}

@@ -2,6 +2,11 @@
   grid-column: 1 / -1;
 }
 
+.seguro-titulo h1 {
+  font-size: 4em;
+  font-weight: 600;
+}
+
 .seguros-vantagens-bg {
   background: var(--cor-12);
   color: #fff;
@@ -36,12 +41,18 @@
 }
 
 @media (max-width: 1200px) {
+  .seguro-titulo h1 {
+    font-size: 3em;
+  }
   .vantagens-container h2 {
     font-size: 3em;
   }
 }
 
 @media (max-width: 800px) {
+  .seguro-titulo h1{
+    font-size: 2.5em;
+  }
   .vantagens-container h2 {
     font-size: 2.5em;
   }
