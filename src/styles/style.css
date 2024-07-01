@@ -8,6 +8,9 @@
 @import url(./home/seguros.css);
 @import url(./global/footer.css);
 @import url(./bicicletas/bicicletas.css);
-@import url(./seguros/seguro.css);
+@import url(./seguros/seguros.css);
 @import url(./seguros/perguntas.css);
 @import url(./contatos/contato.css);
+@import url(./contatos/locais.css);
+@import url(./bicicleta/bicicleta.css);
+@import url(./bicicleta/seguro.css);

@@ -1,0 +1,93 @@
+.lojas-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.lojas-container h2 {
+  grid-column: 1 / -1;
+  margin-bottom: 28px;
+}
+
+.lojas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 1px 1px 8px var(--cor-3);
+}
+
+.lojas-conteudo {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 16px;
+  padding: 32px;
+  background-color: #fff;
+}
+
+.lojas img {
+  grid-column: 1 / -1;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px 4px 0 0;
+}
+
+.lojas h3 {
+  grid-column: 1 / -1;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.loja-endereco ul,
+.loja-meios ul { 
+  display: grid;
+  gap: 8px;
+  padding-left: 12px;
+  border-left: 2px solid var(--cor-2);
+}
+
+.loja-endereco ul li,
+.loja-meios ul li a {
+  color: var(--cor-8);
+  font-size: 1em;
+  font-family: 'Roboto';
+}
+
+.lojas-conteudo p{
+  color: #000;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 1200px) {
+  .lojas h3 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 800px){
+  .lojas-container h2 {
+    margin-bottom: 0px;
+  }
+
+  .lojas h3 {
+    font-size: 1.3em;
+  }
+
+  .lojas-container {
+    grid-template-columns: 1fr;
+  }
+
+  .lojas-conteudo {
+    grid-template-columns: 1fr;
+  }
+}
